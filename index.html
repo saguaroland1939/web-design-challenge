@@ -11,7 +11,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="file:///C:/Users/vsnix/Data-Analytics/web-design-challenge/index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,24 +45,110 @@
           </form>
         </div>
       </nav>
-  <!-- Header -->
-  <h1>How Weather Affects The Health of The Saguaro Population at Desert Botanical Garden</h1>
 
   <!-- Image -->
-  <img src="https://static.wikia.nocookie.net/spongebob/images/4/46/SVG_SpongeBob_SquarePants.svg/revision/latest/scale-to-width-down/195?cb=20181117230211" alt="Spongebob!" />
+  <p align="center"><img src="WebVisualizations\Resources\assets\images\Saguaro%20map.png" alt="Saguaro map" /></p>
   <br>
-
-  <!-- Link with New Tab -->
-  <a href="https://www.google.com" target="_blank">Opens new tab</a>
+  <!-- Header -->
+  <h2 align="center">How Saguaros Respond to Extreme Weather in Phoenix</h2>
   <br>
-
-  <!-- Bold Link -->
-  <strong><a href="https://www.youtube.com">This is a bold link</a></strong>
+  <h4 align="center">An Analysis of Eight Years of Saguaro Health Data</h4>
+  <h4 align="center">Collected at Desert Botanical Garden</h4>
   <br>
+  <!-- YouTube Video Intro o8hBhOgSMfo -->
+  <p align="center"><iframe width="500" height="315" src="https://www.youtube.com/embed/o8hBhOgSMfo"></iframe></p>
+  
+  <!-- About the project -->
+  <h5 align="center">Thank you</h5>
+    <p align="center">
+        To the Research Team at Desert Botanical Garden - staff and volunteers - for the time and energy you have invested 
+        in creating this invaluable dataset and for supporting our class project.
+    </p>
+  <h5 align="center">Data analysis team</h5>
+    <p align="center">
+        <ul align="center">
+            <li>
+                Steve Ovsak researched historical weather data sources, obtained and formatted the weather data for analysis, 
+                and carried out weather data exploration.
+            </li>
+            <li>
+                Steven Rohano's background is in the agricultural industry. He cleaned up and structured the historical 
+                saguaro inventory dataset for analysis and debugged the analysis notebook.
+            </li>
+            <li>
+                Michael Fahey debugged jupyter notebooks and hosted the GitHub repo.
+            </li>
+            <li>
+                Veronica Nixon was responsible for organizing the Saguaro Inventory from 2012 to 2020 as the Garden's GIS Manager. 
+                She continues to support the Garden as a volunteer. Her background is in geographic information systems and science 
+                and she contributed botanical information to this analysis as well as data prep, analysis, and general project management.
+            </li>
+        </ul>
+    </p>
+  <h5 align="center">Introduction</h5>
+    <p align="center">
+        Phoenix weather made the news a lot this summer and record temperatures have the community worried about a possible threat 
+        to our saguaro plantings around Phoenix and our iconic saguaro forests in surrounding desert areas.
+        <ul align="center">
+            <li>
+                <a href="https://www.washingtonpost.com/weather/2020/07/30/phoenix-hottest-month-july" target="_blank" >
+                Phoenix breaks record for its hottest month, with 16 nights that stayed at or above 90 degrees</a>
+            </li>
+            <li>
+                <a href="https://www.azcentral.com/story/news/local/arizona-environment/2020/06/18/saguaro-cactus-imperiled-climate-change-and-humans/3000183001" 
+                target="_blank">Will the iconic saguaro cactus start to disappear from parts of the Southwest?</a>
+            </li>
+        </ul>
+    </p>
+    <p><a href="https://www.dbg.org" target="_blank">Desert Botanical Garden</a> has conducted an annual Saguaro Inventory since 2012. Every year 20+ volunteers and staff visit 
+        each saguaro on the property to assess its condition. Height measurements are taken every 5 years. We obtained the full 
+        historic dataset from DBG and performed basic statistical analyses find out if weather trends over the
+        past several years have had a significant impact on the health of the saguaro population at DBG.
+    </p>
+  <h5 align="center">Research questions</h5>
+    <p align="center">
+        <ol align="center">
+            <li>
+                Is there a relationship between saguaro mortality and the number of nights above 90 degrees in a year? 
+                Cacti cannot "breathe" when the night-time temperature stays above 90, so we would expect to see higher 
+                mortality in years with more nights above 90.
+            </li>
+            <li>
+                Is there a relationship between saguaro growth rate and precipitation? We would expect to see higher 
+                growth rates in the year(s) following a high precipitation year.
+            </li>
+        </ol>
+    </p>
+  <h5 align="center">Data</h5>
+  <p align="center">
+    <ul align="center">
+        <li>
+            Historical Saguaro Inventory records were provided by Desert Botanical Garden from 
+            <a href="https://www.livingcollections.org" target="_blank">A Living Collections Management System</a>
+        </li>
+        <li>
+            Weather data was purchased from <a href="https://www.visualcrossing.com/weather/weather-data-services#/login" 
+            target="_blank">Visual Crossing</a>
+        </li>
+        <li>
+            Saguaro and weather datasets were cleaned up and reformated using pandas.
+        </li>
+        <li>
+            The Jupyter Notebooks used to carry out this analysis can be accessed on 
+            <a href="https://github.com/saguaroland1939/Saguaro-Health-Analysis" target="_blank">GitHub</a>
+        </li>
+    </ul>
+</p>
 
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
-
+  <div class="container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box skyblue" back-ground: blue>col-md-3</div>
+      </div>
+     
+    </div>
+    <div class = "box">
 </body>
 
 </html>
