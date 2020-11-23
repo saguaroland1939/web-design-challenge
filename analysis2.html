@@ -12,15 +12,18 @@
 </head>
 
 <body>
+
   <!-- Bootstrap navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <!--Drop-down menus -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
+
         <!--Analyses drop-down menu -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Analyses</a>
@@ -30,6 +33,7 @@
             <a class="dropdown-item" href="analysis3.html">Mortality vs. nights above 90</a>
           </div>
         </li>
+
         <!-- Data drop-down menu -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data</a>
@@ -39,31 +43,91 @@
           </div>
         </li>
       </ul>
+
       <!-- A spacer to move the Data drop-down far enough left so the menu items don't fall off the screen. -->
       <div style="visibility: hidden"><p>..................................</p></div>
     </div>
   </nav>
 
-<!-- Figure -->
-<p align="center">
-  <figure class="figure">
-     <img src="WebVisualizations\Figures\Fig4_Mean Annual Precipitation per Timespan.png" alt="Figure 4"/>
-    <figcaption class="figure-caption">Fig. 4) Mean annual precipitation for timespan 1 (2013-2015) and timespan 2 (2015-2020)</figcaption>
-  </figure>
-</p>
+<!-- Bootstrap grid to position figures -->
+<div class="container">
+
+  <!-- Figures 4 and 5 -->
+  <div class="row">
+
+    <!-- Figure 4-->
+    <div class="col-lg-6">
+        <figure class="figure">
+          <img src="WebVisualizations\Figures\Fig4_Mean Annual Precipitation per Timespan.png" alt="Figure 4"/>
+          <i><figcaption class="figure-caption">Fig. 4</figcaption></i>
+        </figure>
+    </div>
+
+    <!-- Figure 5-->
+    <div class="col-lg-6">
+        <figure class="figure">
+          <img src="WebVisualizations\Figures\Fig5_Mean Annual Growth per Timespan.png" alt="Figure 5"/>
+          <i><figcaption class="figure-caption">Fig. 5</figcaption></i>
+        </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Figure 6-->
+<div class="container" align="center">
+  <div class="row">
+    <div class="col-lg-12">
+      <figure class="figure">
+        <img src="WebVisualizations\Figures\Fig6_Growth Rate vs Precipitation.png" alt="Figure 6"/>
+        <i><figcaption class="figure-caption" align="left">Fig. 6</figcaption></i>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<!-- Discussion section header -->
+<div class="row">
+  <div class="col-lg-1">
+    <strong><h3>Discussion</h3></strong>
+  </div>
+</div>
+
+<!-- Discussion section paragraphs -->
+<div class="row">
+  <div class="col-lg-12">
+    Figures 1-3 depict the distribution of saguaro heights measured in 2013, 2015, and 2020. 
+    For the purposes of this analysis, only the 525 saguaros that were measured in all three 
+    years are included. Due to this, you can see that the distribution of heights generally shifts
+    from left to right (smaller to larger) across the three years as the saguaros grew between measurements. 
+    The distributions would appear slightly different if all measured saguaros were shown, however, 
+    some general observations can be made.
+  </div>
+</div>
 <br>
-<!-- Figure -->
-<p align="center">
-  <figure class="figure">
-    <img src="WebVisualizations\Figures\Fig5_Mean Annual Growth per Timespan.png" alt="Figure 5"/>
-    <figcaption class="figure-caption">Fig. 5) Mean annual saguaro growth rate for timespan 1 (2013-2015) and timespan 2 (2015-2020)</figcaption>
-  </figure>
-</p>
+<div class="row">
+  <div class="col-lg-12">
+    All three distributions appear to be bi-modal. In addition to there being quite a few 'middle-aged' 
+    saguaros in the 10 to 20-ft range, there is also a large group of very young saguaros in the 1 to 4-ft range. 
+    The Garden is a museum charged with maintaining a collection of educational plant specimens. The realities of
+    plant collection work might partially explain this distribution. Since 1939, the Garden has built up and maintained
+    its saguaro collections from plants and seeds obtained from field collection trips, plants obtained from growers, 
+    and plants received as donations from the community. Given the risk and great expense of tranplanting large saguaros, 
+    collection efforts are focused on seeds and smaller specimen. This might account for the large number of young 
+    saguaros at the Garden.
+  </div>
+</div>
 <br>
-<!-- Figure -->
-<p align="center">
-  <figure class="figure">
-    <img src="WebVisualizations\Figures\Fig6_Growth Rate vs Precipitation.png" alt="Figure 6"/>
-    <figcaption class="figure-caption">Fig. 6) Mean annual growth rate versus mean annual precipitation for timespan 1 (2013-2015) and timespan 2 (2015-2020)</figcaption>
-  </figure>
-</p>
+<div class="row">
+  <div class="col-lg-12">
+    Another factor that might contribute to this bi-modal distribution is the fact that the saguaro population at the
+    Garden is reproducing naturally. During the annual inventories, many new juvenile saguaros are discovered by volunteers 
+    as they grow large enough to emerge from the nurse plants and boulders that protect them. For the past eight years, 
+    these "baby" saguaros, as they are fondly called, have been discovered at a rate that more than offsets annual saguaro
+    mortality at the Garden. Therefore the natural reproduction of saguaros at the Garden likely also contributes to the bi-modal
+    distribution.
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>

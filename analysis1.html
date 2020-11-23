@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Saguaro Health Analysis</title>
+  <title>Saguaro health in extreme weather</title>
+
   <!-- Use Bootstrap stylesheet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -12,15 +13,18 @@
 </head>
 
 <body>
+
   <!-- Bootstrap navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="index.html">Saguaro Health in Extreme Weather</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <!--Drop-down menus -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
+
         <!--Analyses drop-down menu -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Analyses</a>
@@ -30,6 +34,7 @@
             <a class="dropdown-item" href="analysis3.html">Mortality vs. nights above 90</a>
           </div>
         </li>
+
         <!-- Data drop-down menu -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data</a>
@@ -39,31 +44,107 @@
           </div>
         </li>
       </ul>
+
       <!-- A spacer to move the Data drop-down far enough left so the menu items don't fall off the screen. -->
       <div style="visibility: hidden"><p>..................................</p></div>
     </div>
   </nav>
+<br>
+<br>
+<!-- Bootstrap grid to position figures -->
+<div class="container">
 
-<!-- Figure 1-->
-<p align="center">
-  <figure class="figure">
-    <img src="WebVisualizations\Figures\Fig1_Height_distribution_2013.png" alt="Figure 1"/>
-    <figcaption class="figure-caption">Fig. 1) Height distribution of the DBG saguaro population in 2013</figcaption>
-  </figure>
-</p>
+    <!-- Discussion section header -->
+    <div class="row">
+      <div class="col-lg-9">
+        <strong><h4>How old are the saguaros at Desert Botanical Garden?</h4></strong>
+      </div>
+    </div>
 <br>
-<!-- Figure 2-->
-<p align="center">
-  <figure class="figure">
-    <img src="WebVisualizations\Figures\Fig2_Height_distribution_2015.png" alt="Figure 2"/>
-    <figcaption class="figure-caption">Fig. 2) Height distribution of the DBG saguaro population in 2015</figcaption>
-  </figure>
-</p>
+
+  <!-- Figures -->
+  <div class="row">
+
+    <!-- Figure 1-->
+    <div class="col-lg-2">
+        <figure class="figure">
+          <img src="WebVisualizations\Figures\Fig1_Height_distribution_2013.png" alt="Figure 1"/>
+          <i><figcaption class="figure-caption">Fig. 1</figcaption></i>
+        </figure>
+    </div>
+
+    <!-- Spacing -->
+    <div class="col-lg-3"></div>
+
+    <!-- Figure 2-->
+    <div class="col-lg-2">
+        <figure class="figure">
+          <img src="WebVisualizations\Figures\Fig2_Height_distribution_2015.png" alt="Figure 2"/>
+          <i><figcaption class="figure-caption">Fig. 2</figcaption></i>
+        </figure>
+    </div>
+
+    <!-- Spacing -->
+    <div class="col-lg-3"></div>
+
+    <!-- Figure 3-->
+    <div class="col-lg-2">
+        <figure class="figure">
+          <img src="WebVisualizations\Figures\Fig3_Height_distribution_2020.png" alt="Figure 3"/>
+          <i><figcaption class="figure-caption">Fig. 3</figcaption></i>
+        </figure>
+    </div>
+  </div>
+
+    <!-- Discussion section header -->
+    <div class="row">
+      <div class="col-lg-3">
+        <strong><h4>What we found</h4></strong>
+      </div>
+    </div>
+
+  <!-- Discussion section paragraphs -->
+  <div class="row">
+    <div class="col-lg-12">
+      <a href="analysis1.html">Figures 1-3</a> depict the distribution of saguaro heights measured in 2013, 2015, and 2020. 
+      For the purposes of this analysis, only the 525 saguaros that were measured in all three 
+      years are included. Due to this, you can see that the distribution of heights generally shifts
+      from left to right (smaller to larger) across the three years as the saguaros grew between measurements. 
+      The tails of the distributions would appear slightly different if all measured saguaros were included due to the loss 
+      of older saguaros and the acquisition/discovery of juvenile saguaros. However, some general observations can be made.
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-12">
+      <a href="analysis1.html">Figures 1-3</a> show that the height distribution in all years is fairly bi-modal. In addition to there being quite a few 'middle-aged' 
+      saguaros in the 10 to 20-ft range, there is also a large group of very young saguaros in the 1 to 4-ft range. 
+      The Garden is a museum charged with maintaining a collection of educational plant specimens. The realities of
+      plant collection work might partially explain this distribution. The Garden has built up and maintained
+      its saguaro collections from field collecting trips, plants obtained from growers, 
+      and plants received as donations from the community. Given the risk and great expense of tranplanting large saguaros, 
+      collection efforts are focused on seeds and smaller specimen. The on-going acquisition of younger saguaros partially accounts for the large number of young 
+      saguaros at the Garden. The dip in frequency between 5-10 feet may indicate that there has been a heightened level of saguaro collection
+      activity in recent years.
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-12">
+      Another factor that might contribute to the bi-modal distribution visible in <a href="analysis1.html">Figures 1-3</a> is the fact that the saguaro population at the
+      Garden is recruiting (reproducing). During the annual inventories, many new juvenile saguaros have been discovered by volunteers 
+      as they grow large enough to emerge from the nurse plants and boulders that protect them. For the past eight years, 
+      these "baby" saguaros, as they are fondly called, have been discovered at a rate that more than offsets annual saguaro
+      mortality at the Garden. Therefore the recruitment of saguaros at the Garden likely also contributes to the bi-modal
+      distribution. The dip in frequency between 5-10 feet could also be partially explained by lower recruitment rates in previous decades or lower
+      survival rates for young saguaros. It would be interesting to compare the height distribution of the "wild" saguaro at the Garden
+      to historical weather data for the past several decades to discover if the weather in recent years has been ideal for saguaro recruitment and survival
+      of young saguaros.
+    </div>
+  </div>
+</div>
 <br>
-<!-- Figure 3-->
-<p align="center">
-  <figure class="figure">
-    <img src="WebVisualizations\Figures\Fig3_Height_distribution_2020.png" alt="Figure 3"/>
-    <figcaption class="figure-caption">Fig. 3) Height distribution of the DBG saguaro population in 2020</figcaption>
-  </figure>
-</p>
+<br>
+<br>
+
+
