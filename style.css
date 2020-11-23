@@ -13,3 +13,8 @@ a
   font-weight: bolder;
   color: rgb(150, 189, 175);
 }
+
+.figure-caption
+{
+  color: rgb(63, 46, 12);
+}
