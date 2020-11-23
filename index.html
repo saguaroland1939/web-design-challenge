@@ -13,8 +13,8 @@
 
 <body>
   <!-- Bootstrap navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Home</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light "style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="index.html">Saguaro Health in Extreme Weather</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,114 +44,141 @@
     </div>
   </nav>
 
-  <!-- Image -->
-  <p align="center"><img src="WebVisualizations\Assets\Saguaro%20map.png" alt="Saguaro map" /></p>
   <br>
-  <!-- Header -->
-  <h2 align="center">How Saguaros Respond to Extreme Weather in Phoenix</h2>
-  <br>
-  <h4 align="center">An Analysis of Eight Years of Saguaro Health Data</h4>
-  <h4 align="center">Collected at Desert Botanical Garden</h4>
-  <br>
-  <!-- YouTube Video Intro o8hBhOgSMfo -->
-  <p align="center"><iframe width="500" height="315" src="https://www.youtube.com/embed/o8hBhOgSMfo"></iframe></p>
-  
-  <!-- About the project -->
-  <h5 align="center">Thank you</h5>
-    <p align="center">
+
+<!-- Bootstrap grid -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+
+      <!-- Header -->
+      <h2 align="center">How Do Saguaros Respond to Extreme Weather in Phoenix?</h2>
+
+      <!-- Header -->
+      <h4 align="center">An Analysis of Eight Years of Saguaro Health Data Collected at Desert Botanical Garden</h4>
+      <br>
+      <br>
+
+      <!-- YouTube Video Intro o8hBhOgSMfo -->
+      <p align="center"><iframe width="500" height="315" src="https://www.youtube.com/embed/o8hBhOgSMfo"></iframe></p>
+
+      <!-- About the project -->
+
+      <!-- Header -->
+      <h5>Thank you</h5>
+
+      <!-- Content -->
+      <p>
         To the Research Team at Desert Botanical Garden - staff and volunteers - for the time and energy you have invested 
         in creating this invaluable dataset and for supporting our class project.
-    </p>
-  <h5 align="center">Data analysis team</h5>
-    <p align="center">
-        <ul align="center">
-            <li>
-                Steve Ovsak researched historical weather data sources, obtained and formatted the weather data for analysis, 
-                and carried out weather data exploration.
-            </li>
-            <li>
-                Steven Rohano's background is in the agricultural industry. He cleaned up and structured the historical 
-                saguaro inventory dataset for analysis and debugged the analysis notebook.
-            </li>
-            <li>
-                Michael Fahey debugged jupyter notebooks and hosted the GitHub repo.
-            </li>
-            <li>
-                Veronica Nixon was responsible for organizing the Saguaro Inventory from 2012 to 2020 as the Garden's GIS Manager. 
-                She continues to support the Garden as a volunteer. Her background is in geographic information systems and science 
-                and she contributed botanical information to this analysis as well as data prep, analysis, and general project management.
-            </li>
+      </p>
+
+      <!-- Header -->
+      <h5>Data analysis team</h5>
+
+      <!-- Bulleted list -->
+      <p>
+        <ul>
+          <li>
+            Steve Ovsak researched historical weather data sources, obtained and formatted the weather data for analysis, and carried out weather data exploration.
+          </li>
+          <li>
+            Steven Rohano's background is in the agricultural industry. He cleaned up and structured the historical saguaro inventory dataset for analysis and debugged the analysis notebook.
+          </li>
+          <li>
+            Michael Fahey debugged jupyter notebooks and hosted the GitHub repo.
+          </li>
+          <li>
+            Veronica Nixon was responsible for organizing the Saguaro Inventory from 2012 to 2020 as the Garden's GIS Manager. 
+            She continues to support the Garden as a volunteer. Her background is in geographic information systems and science 
+            and she contributed botanical information to this analysis as well as data prep, analysis, and general project management.
+          </li>
         </ul>
-    </p>
-  <h5 align="center">Introduction</h5>
-    <p align="center">
-        Phoenix weather made the news a lot this summer and record temperatures have the community worried about a possible threat 
-        to our saguaro plantings around Phoenix and our iconic saguaro forests in surrounding desert areas.
-        <ul align="center">
+      </p>
+
+      <!-- Header -->
+      <h5>Introduction</h5>
+
+      <!-- Bulleted list -->
+      <p>
+        Phoenix weather made the news this year following a record number of nights that did not fall below 90 degrees. This extreme weather 
+        has the community worried about a possible threat to our saguaro plantings around Phoenix and our iconic saguaro forests in surrounding desert areas.
+          <ul>
             <li>
-                <a href="https://www.washingtonpost.com/weather/2020/07/30/phoenix-hottest-month-july" target="_blank" >
-                Phoenix breaks record for its hottest month, with 16 nights that stayed at or above 90 degrees</a>
+              <a href="https://www.washingtonpost.com/weather/2020/07/30/phoenix-hottest-month-july" target="_blank" >
+              Phoenix breaks record for its hottest month, with 16 nights that stayed at or above 90 degrees</a>
             </li>
             <li>
-                <a href="https://www.azcentral.com/story/news/local/arizona-environment/2020/06/18/saguaro-cactus-imperiled-climate-change-and-humans/3000183001" 
-                target="_blank">Will the iconic saguaro cactus start to disappear from parts of the Southwest?</a>
+              <a href="https://www.azcentral.com/story/news/local/arizona-environment/2020/06/18/saguaro-cactus-imperiled-climate-change-and-humans/3000183001" 
+              target="_blank">Will the iconic saguaro cactus start to disappear from parts of the Southwest?</a>
             </li>
-        </ul>
-    </p>
-    <p><a href="https://www.dbg.org" target="_blank">Desert Botanical Garden</a> has conducted an annual Saguaro Inventory since 2012. Every year 20+ volunteers and staff visit 
-        each saguaro on the property to assess its condition. Height measurements are taken every 5 years. We obtained the full 
-        historic dataset from DBG and performed basic statistical analyses find out if weather trends over the
-        past several years have had a significant impact on the health of the saguaro population at DBG.
-    </p>
-  <h5 align="center">Research questions</h5>
-    <p align="center">
-        <ol align="center">
+          </ul>
+      </p>
+
+      <!-- Paragraph -->
+      <p><a href="https://www.dbg.org" target="_blank">Desert Botanical Garden</a> has conducted an annual Saguaro Inventory since 2012. Every year 20+ volunteers and staff visit 
+          each saguaro on the property to assess its condition. Height measurements are taken every 5 years. We obtained the saguaro inventory dataset from DBG and performed basic 
+          statistical analyses find out if weather trends over the past several years have had a significant impact on the health of the saguaro population at DBG.
+      </p>
+
+      <!-- Heading -->
+      <h5>Analyses</h5>
+
+      <!-- Numbered list -->
+      <p>We focused on growth rate and mortality rate as two indicators of saguaro health. The health of the population as a whole is related to the age of the saguaros
+      so the first analysis displays the distribution of heights.
+        <ol>
             <li>
-                We chose growth rate and mortality rate as two indicators of saguaro health. Our first research question asks 
-                Is there a relationship between saguaro mortality and the number of nights above 90 degrees in preceding years?
-                Cacti cannot "breathe" when the night-time temperature stays above 90, so we would expect to see higher 
-                mortality in years with more nights above 90.
+                How old are the saguaros at the Garden?
             </li>
             <li>
-                Is there a relationship between saguaro growth rate and precipitation? We would expect to see higher 
-                growth rates in the year(s) following a high precipitation year.
+                Do hotter night-time temperatures correlate with higher saguaro mortality rates in subsequent years?
+            </li>
+            <li>
+                Do higher precipitation rates correlate with higher saguaro growth rates? 
             </li>
         </ol>
-    </p>
-  <h5 align="center">Data</h5>
-  <p align="center">
-    <ul align="center">
-        <li>
-            Historical Saguaro Inventory records were provided by Desert Botanical Garden from 
-            <a href="https://www.livingcollections.org" target="_blank">A Living Collections Management System</a>
-        </li>
-        <li>
-            Weather data was purchased from <a href="https://www.visualcrossing.com/weather/weather-data-services#/login" 
-            target="_blank">Visual Crossing</a>
-        </li>
-        <li>
-            Saguaro and weather datasets were cleaned up and reformated using pandas.
-            The Jupyter Notebooks used to carry out this analysis can be accessed on 
-            <a href="https://github.com/saguaroland1939/Saguaro-Health-Analysis" target="_blank">GitHub</a>
-        </li>
-    </ul>
-</p>
+      </p>
 
-<!-- Links to analyses -->
-<figure class="figure">
-  <a href = "analysis1.html">
-    <img src="WebVisualizations\Figures\Fig3_Height_distribution_2020.png" alt="Saguaro height distributions"/>
-  </a>
-</figure>
-<figure class="figure">
-  <a href = "analysis2.html">
-    <img src="WebVisualizations\Figures\Fig6_Growth Rate vs Precipitation.png" alt="Growth rate vs. precipitation"/>
-  </a>
-</figure>
-<figure class="figure">
-  <a href = "analysis2.html">
-    <img src="WebVisualizations\Figures\Fig10_Losses vs Nights Above 90 Two Years.png" alt="Mortality vs. nights above 90"/>
-  </a>
-</figure>
+      <!-- Header -->
+      <h5>Data</h5>
+
+      <!-- Paragraph -->
+      <p>
+        Historical Saguaro Inventory records were provided by Desert Botanical Garden from 
+        <a href="https://www.livingcollections.org" target="_blank">A Living Collections Management System</a>
+        Weather data was purchased from <a href="https://www.visualcrossing.com/weather/weather-data-services#/login" 
+        target="_blank">Visual Crossing</a>Saguaro and weather datasets were cleaned up and reformated using pandas.
+        The Jupyter Notebooks used to carry out this analysis can be accessed on 
+        <a href="https://github.com/saguaroland1939/Saguaro-Health-Analysis" target="_blank">GitHub</a>
+      </p>
+    </div>
+
+    <!-- Spacing -->
+    <div class="col-lg-2"></div>
+
+    <!-- Side-bar with links to analyses-->
+    <div class="col-lg-2" style="background-color: rgb(61, 61, 59);">
+      <h4 align="center">Analyses</h4>
+      <figure class="figure">
+        <a href = "analysis1.html">
+          <img src="WebVisualizations\Figures\Fig3_Height_distribution_2020.png" alt="Saguaro height distributions"/>
+        </a>
+      </figure>
+      <figure class="figure">
+        <a href = "analysis2.html">
+          <img src="WebVisualizations\Figures\Fig6_Growth Rate vs Precipitation.png" alt="Growth rate vs. precipitation"/>
+        </a>
+      </figure>
+      <figure class="figure">
+        <a href = "analysis2.html">
+          <img src="WebVisualizations\Figures\Fig10_Losses vs Nights Above 90 Two Years.png" alt="Mortality vs. nights above 90"/>
+        </a>
+      </figure>
+    </div>
+  </div>
+</div>
+
+
 </body>
 </html>
