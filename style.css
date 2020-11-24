@@ -1,20 +1,24 @@
+/* Adds fixed background image to body. */
 body
 {
   background-image: url(backgroundimage.jpg);
   background-attachment: fixed;
 }
 
+/* Adds padding to table column headers on Data pages */
 thead
 {
   padding-left: 5;
   padding-right: 5;
 }
 
+/* Sets color for most paragraph content. */
 .col-lg-8 
 {
   color: rgb(238, 231, 221);
 }
 
+/* Sets text properties for light hyperlinks. */
 .hyperlink-light
 {
   color: rgb(238, 231, 221);
@@ -23,6 +27,7 @@ thead
   text-decoration: underline; 
 }
 
+/* Sets text properties for hover-over light hyperlinks. */
 .hyperlink-light:hover
 {
   color: rgb(177, 154, 121);
@@ -31,6 +36,7 @@ thead
   text-decoration: underline; 
 }
 
+/* Sets text properties for dark hyperlinks. */
 .hyperlink-dark
 {
   color: rgb(63, 46, 12);
@@ -39,50 +45,74 @@ thead
   text-decoration: underline; 
 }
 
+/* Sets text properties for hover-over dark hyperlinks. */
+.hyperlink-light:hover
+{
+  color: rgb(133, 120, 78);
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: underline; 
+
+/* Sets text color for figure captions. */
 .figure-caption
 {
   color: rgb(63, 46, 12);
 }
 
+/* Sets translucent background color for tables on Data pages. */
 table 
 {
   background-color: rgba(63, 46, 12, 0.50);
 }
 
+/* Not sure if th or thead padding worked. This may be redundant. */
 th
 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
+/* Sets responsive behavior for navbar. */
 @media (max-width: 1200px) 
 { 
+  /* Changes background color, overrides Bootstrap value that was set to !important. */
   .navbar 
   {
     background-color: rgb(105, 84, 43) !important;
   }
 
+  /* Changes text color. */
   .navbar-brand
   {
     color: rgb(238, 231, 221) !important;
   }
 
+  /*  */
   .dropdown-menu
   {
     background-color: rgb(105, 84, 43) !important;
   }
 
+  /*  */
   .dropdown-item
   {
     color: rgb(238, 231, 221) !important;
   }
 
+  /*  */
   .nav-link
   {
     color: rgb(238, 231, 221) !important;
   }
 
-  .navbar-toggler
+  /* Couldn't get this to change the burger color unfortunatly. */
+  .custom-navbar-toggler
+  {
+    border-color: rgb(238, 231, 221);
+  }
+
+  /* Adds an outline around the burger. Couldn't get it to change color unfortunatly. */
+  .btn-outline-success
   {
     color: rgb(238, 231, 221) !important;
   }
