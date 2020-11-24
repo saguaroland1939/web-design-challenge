@@ -12,6 +12,12 @@ thead
   padding-right: 5;
 }
 
+.table 
+{
+  overflow-x: scroll;
+  max-height: 350px;
+}
+
 /* Sets color for most paragraph content. */
 .col-lg-8 
 {
@@ -51,7 +57,8 @@ thead
   color: rgb(133, 120, 78);
   font-weight: bolder;
   font-style: italic;
-  text-decoration: underline; 
+  text-decoration: underline;
+}
 
 /* Sets text color for figure captions. */
 .figure-caption
